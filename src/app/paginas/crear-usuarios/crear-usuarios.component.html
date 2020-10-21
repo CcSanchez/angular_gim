@@ -1,0 +1,43 @@
+<div style="padding: 10%;height: 50vh;">
+    <div style="width: 100%;display: flex;align-items: center;justify-content: center;">
+        <h1>Crear usuarios</h1>
+    </div>
+
+
+    <div class="flex">
+        <form class="example-form">
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Usuario</mat-label>
+                <input autocomplete="off" matInput [(ngModel)]="usuario" name="usuario">
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Nombre</mat-label>
+                <input autocomplete="off" matInput [(ngModel)]="nombre" name="nombre">
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Apellido</mat-label>
+                <input autocomplete="off" matInput [(ngModel)]="apellido" name="apellido">
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Contraseña</mat-label>
+                <input autocomplete="off" matInput [(ngModel)]="contrasena" name="contrasena">
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Sede</mat-label>
+                <input autocomplete="off" matInput [(ngModel)]="sede" name="sede">
+            </mat-form-field>
+
+        </form>
+
+    </div>
+    <div style="width: 100%;display: flex;justify-content: center;align-items: center;">
+        <button mat-button class="button-crear" (click)="crearUsuario()">
+            Crear
+        </button>
+        <button mat-button class="button-crear" (click)="volver()">
+            Volver
+        </button>
+    </div>
+
+</div>
